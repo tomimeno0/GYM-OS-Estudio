@@ -9,7 +9,7 @@ Este reparto es específico del corte parcial. El final tiene otro alcance: por 
 | Iván Lerner        | Entrenamientos e historial                | CU021                      | [Guía](guias/03-ivan-lerner.md)        |
 | Paulo López        | Objetivos personales                      | CU009, CU010, CU012, CU013 | [Guía](guias/04-paulo-lopez.md)        |
 | Gade Silva y Lápiz | Mediciones y perfil físico                | CU007, CU008               | [Guía](guias/05-gade-silva-y-lapiz.md) |
-| Valentín Schueld   | Rutinas manuales                          | CU014, CU016, CU018, CU020 | [Guía](guias/06-valentin-schueld.md)   |
+| Valentín Schueld   | Rutinas manuales                          | CU014, CU016, CU018, CU020 | Guía retirada temporalmente            |
 | Mateo Romani       | Panel y visualización del progreso        | CU011 y panel de resumen   | [Guía](guias/07-mateo-romani.md)       |
 | Joaquín Casanou    | Catálogo y consulta de ejercicios/rutinas | CU017 y catálogo de apoyo  | [Guía](guias/08-joaquin-casanou.md)    |
 | Simón Castellani   | Mi cuenta y datos personales              | CU005, CU006               | [Guía](guias/09-simon-castellani.md)   |

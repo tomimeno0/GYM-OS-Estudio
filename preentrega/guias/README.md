@@ -1,6 +1,6 @@
 # Cómo estudiar la preentrega
 
-Nueve guías, una función visible por persona. La lista y el orden de exposición están en [REPARTO](../REPARTO.md). Este es el corte parcial; no estudiar desde guías del final para explicar funciones ausentes.
+Ocho guías activas, una función visible por persona. La guía de Valentín está retirada temporalmente; el equipo y su reparto no cambian. La lista y el orden de exposición están en [REPARTO](../REPARTO.md). Este es el corte parcial; no estudiar desde guías del final para explicar funciones ausentes.
 
 | Integrante         | Funcionalidad                             | Guía                              |
 | ------------------ | ----------------------------------------- | --------------------------------- |
@@ -9,7 +9,7 @@ Nueve guías, una función visible por persona. La lista y el orden de exposici�
 | Iván Lerner        | Entrenamientos e historial                | [Abrir](03-ivan-lerner.md)        |
 | Paulo López        | Objetivos personales                      | [Abrir](04-paulo-lopez.md)        |
 | Gade Silva y Lápiz | Mediciones y perfil físico                | [Abrir](05-gade-silva-y-lapiz.md) |
-| Valentín Schueld   | Rutinas manuales                          | [Abrir](06-valentin-schueld.md)   |
+| Valentín Schueld   | Rutinas manuales                          | Guía retirada temporalmente       |
 | Mateo Romani       | Panel y visualización del progreso        | [Abrir](07-mateo-romani.md)       |
 | Joaquín Casanou    | Catálogo y consulta de ejercicios/rutinas | [Abrir](08-joaquin-casanou.md)    |
 | Simón Castellani   | Mi cuenta y datos personales              | [Abrir](09-simon-castellani.md)   |
