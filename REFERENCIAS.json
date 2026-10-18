@@ -1,0 +1,12 @@
+{
+  "preentrega": {
+    "repositorio": "https://github.com/tomimeno0/GYM-OS-Preentrega",
+    "commit": "9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec",
+    "guias": 9
+  },
+  "final": {
+    "repositorio": "https://github.com/tomimeno0/GYM-OS",
+    "commit": "1e919868a04f0e10040065d2a65c3e0e1123e5bb",
+    "guias": 9
+  }
+}
