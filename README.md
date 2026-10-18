@@ -1,10 +1,8 @@
 # GYM-OS · Material de estudio del equipo
 
-**Para la preentrega, estudien la carpeta `preentrega/`.** Las guías disponibles explican la funcionalidad, archivos, funciones, librerías, datos, errores y demostración de cada integrante. Tomás tiene inteligencia artificial; no se le suma otro módulo.
+**Para la preentrega, estudien la carpeta `preentrega/`.** Cada integrante tiene una guía con su funcionalidad, archivos, funciones, librerías, datos, errores y demostración. Tomás tiene inteligencia artificial; no se le suma otro módulo.
 
 Este repositorio contiene documentación de estudio, no la aplicación ni claves privadas. El reparto organiza responsabilidades de preparación y revisión; no atribuye desarrollos históricos que no se realizaron.
-
-La guía de Valentín está retirada temporalmente de ambas versiones. Su responsabilidad se mantiene y el material está resguardado para poder restaurarlo. Hay ocho guías activas por versión.
 
 ## Qué estudia cada uno para la preentrega
 
@@ -15,7 +13,7 @@ La guía de Valentín está retirada temporalmente de ambas versiones. Su respon
 | Iván Lerner        | Entrenamientos e historial                | [Abrir guía](preentrega/guias/03-ivan-lerner.md)        |
 | Paulo López        | Objetivos personales                      | [Abrir guía](preentrega/guias/04-paulo-lopez.md)        |
 | Gade Silva y Lápiz | Mediciones y perfil físico                | [Abrir guía](preentrega/guias/05-gade-silva-y-lapiz.md) |
-| Valentín Schueld   | Rutinas manuales                          | Guía retirada temporalmente                             |
+| Valentín Schueld   | Rutinas manuales                          | [Abrir guía](preentrega/guias/06-valentin-schueld.md)   |
 | Mateo Romani       | Panel y visualización del progreso        | [Abrir guía](preentrega/guias/07-mateo-romani.md)       |
 | Joaquín Casanou    | Catálogo y consulta de ejercicios/rutinas | [Abrir guía](preentrega/guias/08-joaquin-casanou.md)    |
 | Simón Castellani   | Mi cuenta y datos personales              | [Abrir guía](preentrega/guias/09-simon-castellani.md)   |
@@ -32,7 +30,7 @@ Las guías enlazan a archivos y líneas de commits concretos de los repositorios
 
 ## Material del sistema final
 
-La carpeta `final/` queda como referencia para la entrega completa: [reparto final](final/REPARTO.md) y [guías finales disponibles](final/guias/README.md). **No mezclar repartos:** Valentín, Mateo y Simón tienen funcionalidades distintas en la preentrega porque nutrición y administración quedaron para el final. Tomás conserva IA en ambas; en la parcial solo hay chat, en la final también generación/adaptación de planes.
+La carpeta `final/` queda como referencia para la entrega completa: [reparto final](final/REPARTO.md) y [nueve guías finales](final/guias/README.md). **No mezclar repartos:** Valentín, Mateo y Simón tienen funcionalidades distintas en la preentrega porque nutrición y administración quedaron para el final. Tomás conserva IA en ambas; en la parcial solo hay chat, en la final también generación/adaptación de planes.
 
 Código de la preentrega: [GYM-OS-Preentrega](https://github.com/tomimeno0/GYM-OS-Preentrega). Código completo: [GYM-OS](https://github.com/tomimeno0/GYM-OS).
 

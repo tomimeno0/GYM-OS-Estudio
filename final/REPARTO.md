@@ -13,7 +13,7 @@ Se conserva «Gade Silva y Lápiz» como un solo integrante, según el listado r
 | Iván Lerner        | Entrenamientos e historial de sesiones   | [03-ivan-lerner.md](guias/03-ivan-lerner.md)               |
 | Paulo López        | Objetivos personales                     | [04-paulo-lopez.md](guias/04-paulo-lopez.md)               |
 | Gade Silva y Lápiz | Perfil físico, progreso y panel          | [05-gade-silva-y-lapiz.md](guias/05-gade-silva-y-lapiz.md) |
-| Valentín Schueld   | Dietas y planificación alimentaria       | Guía retirada temporalmente                                |
+| Valentín Schueld   | Dietas y planificación alimentaria       | [06-valentin-schueld.md](guias/06-valentin-schueld.md)     |
 | Mateo Romani       | Registro alimentario, alimentos y macros | [07-mateo-romani.md](guias/07-mateo-romani.md)             |
 | Tomás Menossi      | Asistente de IA y planes generados       | [02-tomas-menossi.md](guias/02-tomas-menossi.md)           |
 | Simón Castellani   | Administración del sistema               | [09-simon-castellani.md](guias/09-simon-castellani.md)     |

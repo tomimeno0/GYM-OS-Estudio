@@ -1,6 +1,6 @@
 # Guías del GYM-OS completo
 
-Ocho guías activas, cada una centrada en una funcionalidad completa. La guía de Valentín está retirada temporalmente; su responsabilidad no cambia. Estas guías reemplazan el reparto reducido de autenticación para la defensa del sistema final. No modifican ni borran la entrega parcial guardada en .local/Proyecto-Gym-OS.
+Un documento por persona y una funcionalidad completa por documento. Estas guías reemplazan el reparto reducido de autenticación para la defensa del sistema final. No modifican ni borran la entrega parcial guardada en .local/Proyecto-Gym-OS.
 
 | Integrante         | Funcionalidad                            | Guía                              |
 | ------------------ | ---------------------------------------- | --------------------------------- |
@@ -9,7 +9,7 @@ Ocho guías activas, cada una centrada en una funcionalidad completa. La guía d
 | Iván Lerner        | Entrenamientos e historial de sesiones   | [Abrir](03-ivan-lerner.md)        |
 | Paulo López        | Objetivos personales                     | [Abrir](04-paulo-lopez.md)        |
 | Gade Silva y Lápiz | Perfil físico, progreso y panel          | [Abrir](05-gade-silva-y-lapiz.md) |
-| Valentín Schueld   | Dietas y planificación alimentaria       | Guía retirada temporalmente       |
+| Valentín Schueld   | Dietas y planificación alimentaria       | [Abrir](06-valentin-schueld.md)   |
 | Mateo Romani       | Registro alimentario, alimentos y macros | [Abrir](07-mateo-romani.md)       |
 | Tomás Menossi      | Asistente de IA y planes generados       | [Abrir](02-tomas-menossi.md)      |
 | Simón Castellani   | Administración del sistema               | [Abrir](09-simon-castellani.md)   |
