@@ -10,22 +10,22 @@ Tomás explica la IA; vos no tenés que estudiar Cohere. No hay imágenes/GIF de
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Routines.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx).
-- [controllers/catalog.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/catalog.controller.js).
-- [controllers/routines.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js).
-- [models/exercises/exercises.json](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/exercises/exercises.json).
-- [models/exercises/provenance.json](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/exercises/provenance.json).
+- [client/src/pages/Routines.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx).
+- [controllers/catalog.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/catalog.controller.js).
+- [controllers/routines.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js).
+- [models/exercises/exercises.json](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/exercises/exercises.json).
+- [models/exercises/provenance.json](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/exercises/provenance.json).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                               | Para qué sirve                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [ExerciseCatalog](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L42)     | Busca, filtra y pagina ejercicios; abre instrucciones y permite seleccionar uno para la rutina. |
-| [searchExercises](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/catalog.controller.js#L56) | Filtra el catálogo textual por consulta, categoría y equipo; no llama a un modelo IA.           |
-| [getExercise](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/catalog.controller.js#L51)     | Valida el identificador y devuelve un ejercicio o error si no existe.                           |
-| [RoutineDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L504)      | Presenta días, ejercicios, series y cargas del plan, y da acceso al inicio del entrenamiento.   |
-| [getRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js#L41)     | Autoriza consulta y restringe el plan al propietario.                                           |
-| [routineDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js#L16)  | Carga rutina y ejercicios ordenados sin permitir leer los de otro usuario.                      |
+| [ExerciseCatalog](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L42)     | Busca, filtra y pagina ejercicios; abre instrucciones y permite seleccionar uno para la rutina. |
+| [searchExercises](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/catalog.controller.js#L56) | Filtra el catálogo textual por consulta, categoría y equipo; no llama a un modelo IA.           |
+| [getExercise](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/catalog.controller.js#L51)     | Valida el identificador y devuelve un ejercicio o error si no existe.                           |
+| [RoutineDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L504)      | Presenta días, ejercicios, series y cargas del plan, y da acceso al inicio del entrenamiento.   |
+| [getRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js#L41)     | Autoriza consulta y restringe el plan al propietario.                                           |
+| [routineDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js#L16)  | Carga rutina y ejercicios ordenados sin permitir leer los de otro usuario.                      |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

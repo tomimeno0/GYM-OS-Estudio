@@ -1,5 +1,17 @@
 # Verificación de la preentrega · 18/10/2026
 
+## Corrección del chat · 19/10/2026
+
+Se reprodujo en la pantalla del usuario un defecto que las pruebas anteriores no cubrían: «hola» recibía la negativa fuera de alcance. No era una caída de Cohere. Se corrigieron las instrucciones y la clasificación para aceptar saludos, agradecimientos y continuaciones, interpretar el historial y recuperar conversaciones antes rechazadas. El soporte ahora recibe el alcance concreto de esta preentrega y no debe afirmar que ejecutó acciones o consultó datos personales.
+
+Se aprobaron **17 comprobaciones adicionales**, con 13 respuestas reales de Cohere: saludo, inicio de entrenamiento, contexto ficticio, seguimiento, «dale», «gracias», «holaa», capacidades, saludo en soporte, creación/guardado manual de rutinas, funciones excluidas, consulta ajena acompañada de saludo y recuperación de una conversación rechazada. También se verificaron consentimiento inicial, historial persistido, revocación sin guardado parcial y limpieza con integridad válida. Se corrigieron dos expectativas del guion privado sobre la cantidad de mensajes/conversaciones y se repitió completo. No se utilizó simulación ni se publicaron credenciales.
+
+En el navegador integrado se probó además el saludo en la conversación original, la sugerencia que solo rellena el campo, la respuesta de soporte con pasos reales, el agradecimiento y la recuperación del historial tras recargar. La pantalla informa mientras espera a Cohere, desplaza el historial hasta la última respuesta y permite volver a consultar el estado. Una disponibilidad positiva se cachea cinco minutos; un fallo, quince segundos. Esta ejecución local sirve React compilado y Express juntos en 5174; MySQL continúa en 3309.
+
+Estas pruebas corrigen el caso observado y validan los recorridos indicados; no garantizan toda respuesta futura del modelo ni la cuota del proveedor. Una instrucción de estilo no asegura obediencia total del modelo: en algunas respuestas de entrenamiento todavía puede producir marcas Markdown. No se certifica precisión médica ni el sistema final completo.
+
+[Captura del chat corregido](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/docs/capturas/chat-corregido-2026-10-19.png).
+
 Se verificó esta copia independiente, no se heredaron resultados del proyecto final. Entorno: React/Vite 5174, Express 3002 y MySQL 8.4 en 3309, base/volumen propios. El final y la entrega antigua de login/registro no se modificaron para producir estos resultados.
 
 ## Funcional
@@ -16,10 +28,10 @@ Chrome de escritorio: inicio y login, panel con datos, detalle de rutina, confir
 
 Vista móvil 390 × 844: chat/historial, apertura del menú, navegación a progreso, métricas, gráfico e historial y apertura/cancelación de carga de medidas. En chat y progreso se midió ancho de documento 390, igual al viewport: no hubo desborde horizontal global. El viewport temporal se restableció al finalizar. No se certifican todos los dispositivos, lectores de pantalla ni navegadores.
 
-- [Panel](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/docs/capturas/panel.png).
-- [Chat real](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/docs/capturas/chat-real.png).
-- [Chat móvil](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/docs/capturas/chat-movil.png).
-- [Progreso móvil](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/docs/capturas/progreso-movil.png).
+- [Panel](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/docs/capturas/panel.png).
+- [Chat real](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/docs/capturas/chat-real.png).
+- [Chat móvil](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/docs/capturas/chat-movil.png).
+- [Progreso móvil](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/docs/capturas/progreso-movil.png).
 
 ## Calidad y límites
 

@@ -10,23 +10,23 @@ Valentín diseña rutinas; Joaquín explica el catálogo. Mateo usa las sesiones
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Routines.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx).
-- [controllers/workouts.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/workouts.controller.js).
-- [routes/fitness.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/routes/fitness.routes.js).
-- [models/Entrenamiento.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/Entrenamiento.model.js).
-- [models/EntrenamientoEjercicio.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/EntrenamientoEjercicio.model.js).
+- [client/src/pages/Routines.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx).
+- [controllers/workouts.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/workouts.controller.js).
+- [routes/fitness.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/routes/fitness.routes.js).
+- [models/Entrenamiento.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/Entrenamiento.model.js).
+- [models/EntrenamientoEjercicio.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/EntrenamientoEjercicio.model.js).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                              | Para qué sirve                                                                                               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [Workouts](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L601)          | Lista sesiones y permite paginar el historial.                                                               |
-| [WorkoutDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L647)     | Carga el detalle autorizado antes de mostrar el formulario.                                                  |
-| [WorkoutForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L652)       | Registra series, repeticiones, peso real y ejercicios realizados; confirma el cierre.                        |
-| [startWorkout](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/workouts.controller.js#L46)  | Exige rutina propia y día válido; impide dos sesiones en curso y toma una copia histórica de los ejercicios. |
-| [saveWorkout](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/workouts.controller.js#L154)  | Permite guardar avance o cerrar; un entrenamiento terminado no se vuelve a modificar.                        |
-| [workoutDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/workouts.controller.js#L18) | Devuelve ejercicios de esa sesión, no los de una rutina editada después.                                     |
-| [listWorkouts](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/workouts.controller.js#L33)  | Devuelve historial propio paginado con conteo total.                                                         |
+| [Workouts](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L601)          | Lista sesiones y permite paginar el historial.                                                               |
+| [WorkoutDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L647)     | Carga el detalle autorizado antes de mostrar el formulario.                                                  |
+| [WorkoutForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L652)       | Registra series, repeticiones, peso real y ejercicios realizados; confirma el cierre.                        |
+| [startWorkout](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/workouts.controller.js#L46)  | Exige rutina propia y día válido; impide dos sesiones en curso y toma una copia histórica de los ejercicios. |
+| [saveWorkout](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/workouts.controller.js#L154)  | Permite guardar avance o cerrar; un entrenamiento terminado no se vuelve a modificar.                        |
+| [workoutDetail](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/workouts.controller.js#L18) | Devuelve ejercicios de esa sesión, no los de una rutina editada después.                                     |
+| [listWorkouts](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/workouts.controller.js#L33)  | Devuelve historial propio paginado con conteo total.                                                         |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

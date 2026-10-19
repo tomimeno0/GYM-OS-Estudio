@@ -10,22 +10,22 @@ Gade prepara medidas; Mateo presenta gráficas/porcentajes; Valentín asocia la 
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Fitness.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx).
-- [controllers/fitness.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js).
-- [shared/schemas.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/shared/schemas.js).
-- [models/Objetivo.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/Objetivo.model.js).
+- [client/src/pages/Fitness.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx).
+- [controllers/fitness.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js).
+- [shared/schemas.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/shared/schemas.js).
+- [models/Objetivo.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/Objetivo.model.js).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                                   | Para qué sirve                                                                        |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Goals](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx#L542)                   | Lista metas y ofrece creación, finalización y baja con confirmaciones.                |
-| [GoalForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx#L445)                | Recoge tipo, valor, unidad, frecuencia y fechas sin perder datos ante error.          |
-| [createGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L242)         | Exige medidas, valida la meta y evita dos objetivos activos.                          |
-| [validateGoalValues](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L121) | Comprueba coherencia entre tipo, unidad y valor alcanzable desde la medición inicial. |
-| [activeGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L34)          | Busca la meta activa del propietario.                                                 |
-| [completeGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L253)       | Solo completa una meta activa y conserva la fecha de finalización.                    |
-| [removeGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L261)         | Aplica baja lógica sin borrar el historial de planes ya vinculados.                   |
+| [Goals](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx#L542)                   | Lista metas y ofrece creación, finalización y baja con confirmaciones.                |
+| [GoalForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx#L445)                | Recoge tipo, valor, unidad, frecuencia y fechas sin perder datos ante error.          |
+| [createGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L242)         | Exige medidas, valida la meta y evita dos objetivos activos.                          |
+| [validateGoalValues](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L121) | Comprueba coherencia entre tipo, unidad y valor alcanzable desde la medición inicial. |
+| [activeGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L34)          | Busca la meta activa del propietario.                                                 |
+| [completeGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L253)       | Solo completa una meta activa y conserva la fecha de finalización.                    |
+| [removeGoal](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L261)         | Aplica baja lógica sin borrar el historial de planes ya vinculados.                   |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

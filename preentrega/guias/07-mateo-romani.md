@@ -10,21 +10,21 @@ No registrás alimentos ni macros en esta versión. Gade explica el formulario d
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Fitness.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx).
-- [controllers/fitness.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js).
-- [routes/fitness.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/routes/fitness.routes.js).
-- [client/src/components/ui.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/components/ui.jsx).
+- [client/src/pages/Fitness.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx).
+- [controllers/fitness.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js).
+- [routes/fitness.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/routes/fitness.routes.js).
+- [client/src/components/ui.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/components/ui.jsx).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                               | Para qué sirve                                                                        |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Dashboard](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx#L105)           | Muestra peso actual, sesiones y rutinas recientes; no consulta nutrición.             |
-| [Progress](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx#L278)            | Carga un período de evolución, métricas, metas e historial de medidas.                |
-| [WeightChart](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx#L51)          | Convierte mediciones en un gráfico temporal con descripción accesible y estado vacío. |
-| [progressData](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L270)   | Combina medidas, objetivos y sesiones propias sin mezclar usuarios.                   |
-| [getProgress](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L345)    | Autoriza lectura y devuelve el resumen del período solicitado.                        |
-| [goalPercentage](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L268) | Calcula avance desde valor inicial hacia objetivo, tanto para aumento como descenso.  |
+| [Dashboard](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx#L105)           | Muestra peso actual, sesiones y rutinas recientes; no consulta nutrición.             |
+| [Progress](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx#L278)            | Carga un período de evolución, métricas, metas e historial de medidas.                |
+| [WeightChart](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx#L51)          | Convierte mediciones en un gráfico temporal con descripción accesible y estado vacío. |
+| [progressData](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L270)   | Combina medidas, objetivos y sesiones propias sin mezclar usuarios.                   |
+| [getProgress](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L345)    | Autoriza lectura y devuelve el resumen del período solicitado.                        |
+| [goalPercentage](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L268) | Calcula avance desde valor inicial hacia objetivo, tanto para aumento como descenso.  |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

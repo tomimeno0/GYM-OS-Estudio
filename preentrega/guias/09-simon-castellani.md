@@ -10,22 +10,22 @@ No hay administración de terceros en la preentrega. Acceso/recuperación perten
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Account.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Account.jsx).
-- [controllers/accounts.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js).
-- [routes/accounts.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/routes/accounts.routes.js).
-- [controllers/security.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/security.controller.js).
+- [client/src/pages/Account.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Account.jsx).
+- [controllers/accounts.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js).
+- [routes/accounts.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/routes/accounts.routes.js).
+- [controllers/security.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/security.controller.js).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                                | Para qué sirve                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| [Account](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Account.jsx#L6)                | Edita datos personales y consentimiento; pide contraseña y confirmación para eliminar la cuenta. |
-| [publicUser](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L26)      | Devuelve solo campos públicos y teléfono descifrado; nunca expone hashes o secretos.             |
-| [updateProfile](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L168)  | Modifica únicamente los campos permitidos y audita la operación.                                 |
-| [deleteAccount](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L319)  | Verifica la contraseña y confirma eliminación de datos propios.                                  |
-| [deleteUserData](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L262) | Elimina registros dependientes dentro de una transacción y desasocia bitácora.                   |
-| [encrypt](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/security.controller.js#L42)         | Cifra teléfono con AES-256-GCM y un nonce; no se guarda texto directo.                           |
-| [decrypt](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/security.controller.js#L44)         | Descifra datos solo en servidor, con comprobación de autenticidad.                               |
+| [Account](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Account.jsx#L6)                | Edita datos personales y consentimiento; pide contraseña y confirmación para eliminar la cuenta. |
+| [publicUser](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L26)      | Devuelve solo campos públicos y teléfono descifrado; nunca expone hashes o secretos.             |
+| [updateProfile](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L168)  | Modifica únicamente los campos permitidos y audita la operación.                                 |
+| [deleteAccount](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L319)  | Verifica la contraseña y confirma eliminación de datos propios.                                  |
+| [deleteUserData](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L262) | Elimina registros dependientes dentro de una transacción y desasocia bitácora.                   |
+| [encrypt](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/security.controller.js#L42)         | Cifra teléfono con AES-256-GCM y un nonce; no se guarda texto directo.                           |
+| [decrypt](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/security.controller.js#L44)         | Descifra datos solo en servidor, con comprobación de autenticidad.                               |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

@@ -10,24 +10,24 @@ El perfil personal y borrado corresponden a Simón; no mezclar recuperación con
 
 ## Archivos que tenés que ubicar
 
-- [routes/accounts.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/routes/accounts.routes.js).
-- [controllers/accounts.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js).
-- [controllers/security.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/security.controller.js).
-- [controllers/mail.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/mail.controller.js).
-- [client/src/pages/Auth.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Auth.jsx).
+- [routes/accounts.routes.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/routes/accounts.routes.js).
+- [controllers/accounts.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js).
+- [controllers/security.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/security.controller.js).
+- [controllers/mail.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/mail.controller.js).
+- [client/src/pages/Auth.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Auth.jsx).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                                 | Para qué sirve                                                                          |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [Auth](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Auth.jsx#L118)                     | Elige registro, login o recuperación según la pantalla; conserva errores de formulario. |
-| [register](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L57)         | Valida unicidad, calcula hash y crea usuario Cliente más sesión en una transacción.     |
-| [sessionFor](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L44)       | Crea un token aleatorio; guarda solamente su hash y vencimiento.                        |
-| [login](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L123)           | Comprueba contraseña y estado, registra el acceso y abre sesión.                        |
-| [authenticate](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L125)    | Lee token y fecha; rechaza sesión revocada o cuenta no activa.                          |
-| [logout](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L155)          | Revoca la sesión después de confirmar; cancelar en React no envía cambios.              |
-| [requestRecovery](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L212) | Genera enlace temporal y mensaje sin revelar si existe el correo.                       |
-| [resetPassword](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/accounts.controller.js#L240)   | Verifica token de un solo uso, cambia el hash y revoca sesiones.                        |
+| [Auth](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Auth.jsx#L118)                     | Elige registro, login o recuperación según la pantalla; conserva errores de formulario. |
+| [register](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L57)         | Valida unicidad, calcula hash y crea usuario Cliente más sesión en una transacción.     |
+| [sessionFor](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L44)       | Crea un token aleatorio; guarda solamente su hash y vencimiento.                        |
+| [login](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L123)           | Comprueba contraseña y estado, registra el acceso y abre sesión.                        |
+| [authenticate](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L125)    | Lee token y fecha; rechaza sesión revocada o cuenta no activa.                          |
+| [logout](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L155)          | Revoca la sesión después de confirmar; cancelar en React no envía cambios.              |
+| [requestRecovery](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L212) | Genera enlace temporal y mensaje sin revelar si existe el correo.                       |
+| [resetPassword](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/accounts.controller.js#L240)   | Verifica token de un solo uso, cambia el hash y revoca sesiones.                        |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

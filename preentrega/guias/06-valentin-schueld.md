@@ -10,23 +10,23 @@ En esta preentrega no estudiás dietas porque quedaron fuera de alcance. Las rut
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Routines.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx).
-- [controllers/routines.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js).
-- [shared/schemas.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/shared/schemas.js).
-- [models/Rutina.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/Rutina.model.js).
-- [models/RutinaEjercicio.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/RutinaEjercicio.model.js).
+- [client/src/pages/Routines.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx).
+- [controllers/routines.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js).
+- [shared/schemas.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/shared/schemas.js).
+- [models/Rutina.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/Rutina.model.js).
+- [models/RutinaEjercicio.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/RutinaEjercicio.model.js).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                                   | Para qué sirve                                                                |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| [RoutineList](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L192)            | Lista rutinas activas y ofrece crear o abrir una.                             |
-| [RoutineEditor](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L244)          | Carga la rutina al editar o prepara una nueva.                                |
-| [RoutineForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Routines.jsx#L253)            | Organiza ejercicios por día, series, repeticiones, cargas, descansos y orden. |
-| [normalizeExercises](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js#L43) | Verifica orden y catálogo antes de guardar.                                   |
-| [persistRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js#L59)     | Crea o actualiza la rutina y sus ejercicios en la transacción autorizada.     |
-| [saveRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js#L117)       | Coordina validación, nombres UML, integridad y persistencia manual.           |
-| [removeRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/routines.controller.js#L138)     | Hace baja lógica; impide borrar si existe una sesión en curso.                |
+| [RoutineList](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L192)            | Lista rutinas activas y ofrece crear o abrir una.                             |
+| [RoutineEditor](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L244)          | Carga la rutina al editar o prepara una nueva.                                |
+| [RoutineForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Routines.jsx#L253)            | Organiza ejercicios por día, series, repeticiones, cargas, descansos y orden. |
+| [normalizeExercises](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js#L43) | Verifica orden y catálogo antes de guardar.                                   |
+| [persistRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js#L59)     | Crea o actualiza la rutina y sus ejercicios en la transacción autorizada.     |
+| [saveRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js#L117)       | Coordina validación, nombres UML, integridad y persistencia manual.           |
+| [removeRoutine](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/routines.controller.js#L138)     | Hace baja lógica; impide borrar si existe una sesión en curso.                |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 

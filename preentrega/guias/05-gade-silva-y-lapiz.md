@@ -10,20 +10,20 @@ Mateo explica la visualización del historial; vos la carga y persistencia de me
 
 ## Archivos que tenés que ubicar
 
-- [client/src/pages/Fitness.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx).
-- [controllers/fitness.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js).
-- [shared/schemas.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/shared/schemas.js).
-- [models/MedicionFisica.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/models/MedicionFisica.model.js).
+- [client/src/pages/Fitness.jsx](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx).
+- [controllers/fitness.controller.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js).
+- [shared/schemas.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/shared/schemas.js).
+- [models/MedicionFisica.model.js](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/models/MedicionFisica.model.js).
 
 ## Qué hace cada función importante
 
 | Función                                                                                                                                                 | Para qué sirve                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [MeasurementForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/client/src/pages/Fitness.jsx#L196)       | Distingue carga inicial de nueva medición; convierte números y conserva campos opcionales. |
-| [addMeasurement](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L104)   | Ejecuta el caso UML de carga/actualización, valida fecha y guarda una nueva fila.          |
-| [latestMeasurement](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L24) | Busca la medición más reciente, o anterior a una fecha cuando se necesita comparación.     |
-| [listMeasurements](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/controllers/fitness.controller.js#L43)  | Lista historial propio paginado y ordenado.                                                |
-| [measurementSchema](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/9c960ff3e5bd4ab0c933cbb96b2d65bc1210bdec/shared/schemas.js#L47)                 | Limita peso, altura y porcentajes; impide que grasa y músculo sumen más de 100.            |
+| [MeasurementForm](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/client/src/pages/Fitness.jsx#L196)       | Distingue carga inicial de nueva medición; convierte números y conserva campos opcionales. |
+| [addMeasurement](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L104)   | Ejecuta el caso UML de carga/actualización, valida fecha y guarda una nueva fila.          |
+| [latestMeasurement](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L24) | Busca la medición más reciente, o anterior a una fecha cuando se necesita comparación.     |
+| [listMeasurements](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/controllers/fitness.controller.js#L43)  | Lista historial propio paginado y ordenado.                                                |
+| [measurementSchema](https://github.com/tomimeno0/GYM-OS-Preentrega/blob/2ce44d5a43987f4f197999cbc490dafd77b02679/shared/schemas.js#L47)                 | Limita peso, altura y porcentajes; impide que grasa y músculo sumen más de 100.            |
 
 Los enlaces llevan a la declaración real. Entendé qué recibe, qué valida, qué devuelve y qué puede fallar; no hace falta repetir cada palabra del código. Las operaciones de soporte compartidas se explican en [el recorrido común](README.md).
 
