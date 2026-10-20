@@ -14,6 +14,34 @@ Un documento por persona y una funcionalidad completa por documento. Estas guía
 | Tomás Menossi      | Asistente de IA y planes generados       | [Abrir](02-tomas-menossi.md)      |
 | Simón Castellani   | Administración del sistema               | [Abrir](09-simon-castellani.md)   |
 
+## Mapa visual para ubicarte
+
+Los módulos del final comparten pantalla, entrada, reglas y persistencia. Las integraciones externas son ramas concretas del recorrido, no una base de datos paralela.
+
+```mermaid
+flowchart TD
+    A["👤 Usuario o administrador"]
+    B["🖥️ React · Pantallas por módulo<br/>Cuentas, progreso, rutinas y sesiones<br/>Dietas, consumo, IA y administración"]
+    C["🚪 Express · Rutas + Zod<br/>Sesión, permisos y datos válidos"]
+    D["🧭 Controladores del módulo<br/>Reglas y datos del propietario<br/>Administración exige permisos específicos"]
+    E["🔐 Integridad y transacciones<br/>verified() para lecturas<br/>atomic() para escrituras"]
+    F[("💾 Sequelize → MySQL<br/>Tablas del módulo + bitacora<br/>Firmas DVH / DVV")]
+    G["🖥️ Resultado o error controlado"]
+    H["🧠 Cohere<br/>Chat y planes IA<br/>Consentimiento requerido"]
+    I["🌐 Open Food Facts<br/>Consulta nutricional"]
+    J["📨 Recuperación<br/>SMTP configurado o archivo local"]
+    A --> B --> C --> D --> E --> F
+    F -->|Resultado autorizado| G
+    D -->|IA| H
+    H -->|Valida antes de persistir| E
+    D -->|Buscar alimentos| I
+    I -->|Normaliza respuesta| G
+    D -->|Recuperar acceso| J
+    D -->|Rechazo| G
+```
+
+Cada integrante estudia su recorrido específico. El mapa representa el código final de referencia; no certifica pruebas exhaustivas, entrega SMTP, disponibilidad externa ni funciones de la preentrega.
+
 ## Qué deben entender todos
 
 El lenguaje de frontend y backend es JavaScript. React dibuja pantallas y administra estado; React Router elige la vista. Express recibe HTTP, las rutas verifican sesión/permisos y los controladores aplican reglas. Sequelize representa entidades y genera SQL; mysql2 conecta con MySQL 8.4. Zod valida entradas. Las claves privadas no se entregan al navegador.

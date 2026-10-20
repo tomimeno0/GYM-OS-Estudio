@@ -1,6 +1,6 @@
 # GYM-OS · Material de estudio del equipo
 
-**Para la preentrega, estudien la carpeta `preentrega/`.** Cada integrante tiene una guía con su funcionalidad, archivos, funciones, librerías, datos, errores y demostración. Tomás tiene inteligencia artificial; no se le suma otro módulo.
+**Para la preentrega, estudien la carpeta `preentrega/`.** Cada integrante tiene una guía con un mapa visual, su funcionalidad, archivos, funciones, librerías, datos, errores y demostración. Tomás tiene inteligencia artificial; no se le suma otro módulo.
 
 Este repositorio contiene documentación de estudio, no la aplicación ni claves privadas. El reparto organiza responsabilidades de preparación y revisión; no atribuye desarrollos históricos que no se realizaron.
 
@@ -21,7 +21,7 @@ Este repositorio contiene documentación de estudio, no la aplicación ni claves
 ## Por dónde empezar
 
 1. Todos leen [conceptos compartidos](CONCEPTOS-COMUNES.md) y [recorrido común de la preentrega](preentrega/guias/README.md).
-2. Cada persona lee su guía, abre sus archivos y sigue las funciones enlazadas.
+2. Cada persona empieza por el mapa visual de su guía: sigue las flechas desde la pantalla hasta los datos y el resultado. Después abre sus archivos y sigue las funciones enlazadas.
 3. Practican la demostración del módulo y responden las preguntas de defensa.
 4. Ensayan juntos el [orden de exposición](preentrega/REPARTO.md#orden-de-demostración), sin memorizar el código palabra por palabra.
 5. Consultan el [alcance de la preentrega](preentrega/docs/ALCANCE.md): aproximadamente la mitad del sistema final, con límites explícitos.
@@ -43,3 +43,9 @@ Código de la preentrega: [GYM-OS-Preentrega](https://github.com/tomimeno0/GYM-O
 - Explicar el límite con el módulo del compañero, sin estudiar todo el sistema.
 
 No compartir contraseñas ni API keys al proyectar o estudiar. Usar cuentas ficticias. El correo de desarrollo no llega a un buzón y una respuesta simulada no prueba Cohere real. El alcance y resultados comprobados están documentados por versión.
+
+## Cómo leer los mapas
+
+Los bloques `mermaid` se dibujan como diagramas al abrir los archivos Markdown en GitHub. Usá la vista previa, no la vista de código. Las flechas continuas indican el recorrido; las punteadas señalan un aporte de contexto o una conexión entre módulos. Cada bloque muestra archivos y funciones reales de su versión, junto con validaciones y errores relevantes. Son mapas de estudio simplificados; no sustituyen los UML ni los diagramas de secuencia del proyecto.
+
+Hay un mapa en cada una de las 18 guías individuales y otro en cada recorrido común. El de Tomás en `preentrega/` conserva exactamente el diagrama del chat que se mostró en la conversación. Los mapas de `final/` mantienen su alcance separado.
